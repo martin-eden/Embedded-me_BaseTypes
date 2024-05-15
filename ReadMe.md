@@ -23,7 +23,7 @@ Run [Remove.sh](Remove.sh).
 
 ## Details
 
-Name of base types suits my current taste.
+Naming of base types that suits my current taste.
 
 ```
 TBool
