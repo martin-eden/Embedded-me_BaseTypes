@@ -1,13 +1,29 @@
-# me_Types -- ArduinoIDE library
+# What
 
-## Overview
+(2024-02)
 
-Base type definitions. This library is required for another libraries
-from me.
+Arduino library with base type definitions.
 
-Name of base types suits my current taste.
+
+## Requirements
+
+  * arduino-cli
+  * bash
+
+
+## Install
+
+Run [Install.sh](Install.sh).
+
+
+## Remove
+
+Run [Remove.sh](Remove.sh).
+
 
 ## Details
+
+Name of base types suits my current taste.
 
 ```
 TBool
@@ -20,6 +36,7 @@ TSint_1 TSint_2 TSint_4 TSint_8
 
 TFloat
 ```
+
 
 ## See also
 
