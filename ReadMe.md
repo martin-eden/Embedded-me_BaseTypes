@@ -1,6 +1,6 @@
 # What
 
-(2024-02)
+(2024-02, 2024-05)
 
 Arduino library with base type definitions.
 
@@ -25,18 +25,11 @@ Run [Remove.sh](Remove.sh).
 
 Naming of base types that suits my current taste.
 
-```
-TBool
+Just a fancy naming of base C types to what may be called Pascal-style.
 
-TChar
+Still it's a required definitions for all other my libraries and projects.
 
-TUint_1 TUint_2 TUint_4 TUint_8
-
-TSint_1 TSint_2 TSint_4 TSint_8
-
-TFloat
-```
-
+[Code](src/me_BaseTypes.h)
 
 ## See also
 

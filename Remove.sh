@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Uninstall library
-arduino-cli lib uninstall me_Types
+arduino-cli lib uninstall me_BaseTypes
