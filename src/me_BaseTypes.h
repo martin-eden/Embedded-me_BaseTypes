@@ -1,8 +1,8 @@
 // My nomenclature of type names
 
 /*
-  Version: 5
-  Last mod.: 2024-09-12
+  Version: 6
+  Last mod.: 2024-10-28
 */
 
 #pragma once
@@ -10,12 +10,10 @@
 typedef signed char TSint_1;
 typedef signed int TSint_2;
 typedef signed long int TSint_4;
-typedef signed long long int TSint_8;
 
 typedef unsigned char TUint_1;
 typedef unsigned int TUint_2;
 typedef unsigned long int TUint_4;
-typedef unsigned long long int TUint_8;
 
 typedef char TChar;
 
@@ -31,4 +29,5 @@ typedef void (*TMethod)(TUint_2 Data, TUint_2 State);
   2024-05-17 [+] Namespace, [-] <TBytes>
   2024-06-27 [+] TMethod
   2024-09-12 [-] Namespace
+  2024-10-28 [-] TUint_8, TSint_8. No need
 */
