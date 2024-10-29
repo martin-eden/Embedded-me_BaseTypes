@@ -2,6 +2,7 @@
 
 /*
   Version: 6
+  Author: Martin Eden
   Last mod.: 2024-10-28
 */
 
