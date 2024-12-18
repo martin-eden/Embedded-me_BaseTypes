@@ -1,14 +1,12 @@
 // My nomenclature of type names
 
 /*
-  Version: 7
+  Version: 9
   Author: Martin Eden
-  Last mod.: 2024-12-13
+  Last mod.: 2024-12-18
 */
 
 #pragma once
-
-// Time to break things!
 
 // Renaming fancy C types to our not less fancy names:
 // (
@@ -102,21 +100,22 @@ typedef bool TBool;
 typedef void (*TMethod)(TAddress Data, TAddress Instance);
 
 /*
-  Boolean method call
+  Failable operation
 
-  Three addresses plus boolean flag.
+  Aka boolean method call.
 
   More convenience for some processing tasks.
 */
-typedef TBool (*TResponsiveMethod)(TAddress Data, TAddress Instance);
+typedef TBool (*TOperation)(TAddress Data, TAddress Instance);
 
 /*
-  2024-02-01
-  2024-03-12
-  2024-05-17 [+] Namespace, [-] TBytes
-  2024-06-27 [+] TMethod
-  2024-09-12 [-] Namespace
-  2024-10-28 [-] TUint_8, TSint_8. No need
+  2024-02 #
+  2024-03 #
+  2024-05 #
+  2024-06 #
+  2024-09 #
+  2024-10 #
   2024-12-12 [+] TUnitGetter, [-] TChar, [+] TAsciiz
   2024-12-13 [-] TUnitGetter, [+] TResponsiveMethod
+  2024-12-18
 */
