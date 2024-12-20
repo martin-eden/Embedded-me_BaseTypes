@@ -4,16 +4,12 @@
 
 Arduino library with base type definitions.
 
+Naming of base types and function signatures. Root module.
 
-## Details
 
-Naming of base types that suits my current taste.
+## Code
 
-Just a fancy naming of base C types to what may be called Pascal-style.
-
-Still it's a required definitions for all other my libraries and projects.
-
-[Code](src/me_BaseTypes.h)
+* [Interface][Interface]
 
 
 ## Requirements
@@ -22,14 +18,11 @@ Still it's a required definitions for all other my libraries and projects.
   * bash
 
 
-## Install
+## Install/remove
 
-Run [Install.sh](Install.sh).
-
-
-## Remove
-
-Run [Remove.sh](Remove.sh).
+That's a root library. So there are no dependencies.
+Still I would advise to clone [GetLibs][GetLibs] repo
+and run it's code to get all my stuff.
 
 
 ## See also
@@ -38,6 +31,10 @@ Run [Remove.sh](Remove.sh).
 
 * [My other embedded C++ libraries][Embedded]
 * [My other repositories][Repos]
+
+[Interface]: src/me_BaseTypes.h
+
+[GetLibs]: https://github.com/martin-eden/Embedded-Framework-GetLibs
 
 [Embedded]: https://github.com/martin-eden/Embedded_Crafts/tree/master/Parts
 [Repos]: https://github.com/martin-eden/contents
