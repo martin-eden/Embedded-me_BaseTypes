@@ -1,9 +1,9 @@
 // My nomenclature of type names
 
 /*
-  Version: 9
+  Version: 10
   Author: Martin Eden
-  Last mod.: 2024-12-18
+  Last mod.: 2025-01-28
 */
 
 #pragma once
@@ -45,7 +45,21 @@ typedef const char * TAsciiz;
 
 // )
 
-// What we really need
+// ( Constants for integer types
+const TUint_1 TUint_1_Max = 0xFF;
+const TUint_2 TUint_2_Max = 0xFFFF;
+const TUint_4 TUint_4_Max = 0xFFFFFFFF;
+
+const TSint_1
+  TSint_1_Max = 0x7F,
+  TSint_1_Min = 0x80;
+const TSint_2
+  TSint_2_Max = 0x7FFF,
+  TSint_2_Min = 0x8000;
+const TSint_4
+  TSint_4_Max = 0x7FFFFFFF,
+  TSint_4_Min = 0x80000000;
+// )
 
 /*
   Unit of stuff that our system handles.
@@ -109,13 +123,14 @@ typedef void (*TMethod)(TAddress Data, TAddress Instance);
 typedef TBool (*TOperation)(TAddress Data, TAddress Instance);
 
 /*
-  2024-02 #
-  2024-03 #
-  2024-05 #
-  2024-06 #
-  2024-09 #
-  2024-10 #
+  2024-02
+  2024-03
+  2024-05
+  2024-06
+  2024-09
+  2024-10
   2024-12-12 [+] TUnitGetter, [-] TChar, [+] TAsciiz
   2024-12-13 [-] TUnitGetter, [+] TResponsiveMethod
   2024-12-18
+  2025-01-28
 */
