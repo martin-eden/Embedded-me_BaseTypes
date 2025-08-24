@@ -2,18 +2,19 @@
 
 /*
   Author: Martin Eden
-  Last mod.: 2024-05-17
+  Last mod.: 2025-08-24
 */
 
 #include <me_BaseTypes.h>
 
+void RunTest()
+{
+  [[gnu::unused]] const TUint_2 Limit = 10000;
+}
+
 void setup()
 {
-  TUint_4 SerialSpeed = 57600;
-
-  Serial.begin(SerialSpeed);
-
-  Serial.println("[me_BaseTypes] Library reachable.");
+  RunTest();
 }
 
 void loop()
@@ -22,4 +23,5 @@ void loop()
 
 /*
   2024-05-17
+  2025-08-24
 */

@@ -1,6 +1,6 @@
 # What
 
-(2024-02, 2024-05, 2024-09, 2024-10)
+(2024)
 
 Arduino library with base type definitions.
 
@@ -20,21 +20,15 @@ Naming of base types and function signatures. Root module.
 
 ## Install/remove
 
-That's a root library. So there are no dependencies.
-Still I would advise to clone [GetLibs][GetLibs] repo
-and run it's code to get all my stuff.
+That's a root library. There are no dependencies.
 
 
 ## See also
-
-# See also
 
 * [My other embedded C++ libraries][Embedded]
 * [My other repositories][Repos]
 
 [Interface]: src/me_BaseTypes.h
-
-[GetLibs]: https://github.com/martin-eden/Embedded-Framework-GetLibs
 
 [Embedded]: https://github.com/martin-eden/Embedded_Crafts/tree/master/Parts
 [Repos]: https://github.com/martin-eden/contents

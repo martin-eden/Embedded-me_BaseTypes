@@ -3,7 +3,7 @@
 /*
   Version: 10
   Author: Martin Eden
-  Last mod.: 2025-01-28
+  Last mod.: 2025-08-24
 */
 
 #pragma once
@@ -75,19 +75,14 @@ const TSint_4
 
   For AVR architecture it's byte. (What a spoiler!)
 */
-typedef unsigned char TUnit;
+typedef TUint_1 TUnit;
 
 /*
   Address of unit
 
-  Like coordinates of container on ship.
+  It's like coordinates of container on ship.
 
-  We can modify address but it must remain address.
-  So please don't XOR it with key.
-
-  This code is for ATmega328, so size is 2 Ki, so TUint_2.
-  But size of memory is another parameter.
-  Memory space can be arbitrary large.
+  ATmega328 has 2 KiB memory, so TUint_2 is enough for address.
 */
 typedef TUint_2 TAddress;
 
@@ -123,14 +118,6 @@ typedef void (*TMethod)(TAddress Data, TAddress Instance);
 typedef TBool (*TOperation)(TAddress Data, TAddress Instance);
 
 /*
-  2024-02
-  2024-03
-  2024-05
-  2024-06
-  2024-09
-  2024-10
-  2024-12-12 [+] TUnitGetter, [-] TChar, [+] TAsciiz
-  2024-12-13 [-] TUnitGetter, [+] TResponsiveMethod
-  2024-12-18
+  2024 # # # # # # # # #
   2025-01-28
 */
