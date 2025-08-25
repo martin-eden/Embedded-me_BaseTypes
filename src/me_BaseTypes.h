@@ -1,9 +1,9 @@
 // My nomenclature of type names
 
 /*
-  Version: 10
+  Version: 11
   Author: Martin Eden
-  Last mod.: 2025-08-24
+  Last mod.: 2025-08-25
 */
 
 #pragma once
@@ -118,6 +118,14 @@ typedef void (*TMethod)(TAddress Data, TAddress Instance);
 typedef TBool (*TOperation)(TAddress Data, TAddress Instance);
 
 /*
+  Failable operation with one argument
+
+  Useful for stream input/output.
+*/
+typedef TBool (*TFixedOperation)(TAddress Data);
+
+/*
   2024 # # # # # # # # #
   2025-01-28
+  2025-08-25
 */
