@@ -11,19 +11,25 @@
 // Renaming fancy C types to our not less fancy names:
 // (
 
-// [0, 256)
+/*
+  Logical flag
+
+  Can never be directly stored but used in processing logic.
+*/
+typedef bool TBool;
+
+// [0, 2^8)
 typedef unsigned char TUint_1;
-// [0, 256^2) aka 64 Ki
+// [0, 2^16) aka 64 Ki
 typedef unsigned int TUint_2;
-// [0, 256^2^2) aka 4 Gi
+// [0, 2^32) aka 4 Gi
 typedef unsigned long int TUint_4;
 
-// Signed integers are not really used. But let em stay for a while.
-// Centered [0, 256)
+// Centered [-2^7, 2^7)
 typedef signed char TSint_1;
-// Centered [0, 256^2)
+// Centered [-2^15, 2^15)
 typedef signed int TSint_2;
-// Centered [0, 256^2^2)
+// Centered [-2^31, 2^31)
 typedef signed long int TSint_4;
 
 // Not sure we need float but let it stay for now
@@ -85,13 +91,6 @@ typedef TUint_1 TUnit;
   ATmega328 has 2 KiB memory, so TUint_2 is enough for address.
 */
 typedef TUint_2 TAddress;
-
-/*
-  Logical flag
-
-  Can never be directly stored but used in processing logic.
-*/
-typedef bool TBool;
 
 /*
   2024 # # # # # # # # #
