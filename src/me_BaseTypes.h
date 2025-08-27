@@ -1,7 +1,7 @@
 // My nomenclature of type names
 
 /*
-  Version: 12
+  Version: 13
   Author: Martin Eden
   Last mod.: 2025-08-25
 */
@@ -91,6 +91,15 @@ typedef TUint_1 TUnit;
   ATmega328 has 2 KiB memory, so TUint_2 is enough for address.
 */
 typedef TUint_2 TAddress;
+
+/*
+  Address span with byte granularity
+*/
+struct TAddressSegment
+{
+  TAddress Addr = 0;
+  TUint_2 Size = 0;
+};
 
 /*
   2024 # # # # # # # # #
