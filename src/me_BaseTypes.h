@@ -1,7 +1,7 @@
 // My nomenclature of type names
 
 /*
-  Version: 13
+  Version: 14
   Author: Martin Eden
   Last mod.: 2025-08-28
 */
@@ -74,11 +74,18 @@ const TSint_4
 typedef TUint_1 TUnit;
 
 /*
+  Storage for number of units
+
+  ATmega328 has 2 KiB memory, so TUint_2 is enough.
+*/
+typedef TUint_2 TSize;
+
+/*
   Address of unit
 
   It's like coordinates of container on ship.
 
-  ATmega328 has 2 KiB memory, so TUint_2 is enough for address.
+  Again, TUint_2 is enough for 2 KiB memory.
 */
 typedef TUint_2 TAddress;
 
@@ -88,7 +95,7 @@ typedef TUint_2 TAddress;
 struct TAddressSegment
 {
   TAddress Addr = 0;
-  TUint_2 Size = 0;
+  TSize Size = 0;
 };
 
 /*
@@ -96,4 +103,5 @@ struct TAddressSegment
   2025-01-28
   2025-08-25
   2025-08-27
+  2025-08-28
 */

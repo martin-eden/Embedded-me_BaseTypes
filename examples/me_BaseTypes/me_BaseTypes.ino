@@ -33,6 +33,7 @@ void CompilationTest()
   [[gnu::unused]] TSint_4 Sint_4_Min = TSint_4_Min;
 
   [[gnu::unused]] TUnit Unit;
+  [[gnu::unused]] TSize Size;
   [[gnu::unused]] TAddress Address;
 
   [[gnu::unused]] TAddressSegment AddressSegment =
