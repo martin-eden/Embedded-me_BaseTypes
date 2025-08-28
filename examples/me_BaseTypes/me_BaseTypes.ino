@@ -35,6 +35,7 @@ void CompilationTest()
   [[gnu::unused]] TUnit Unit;
   [[gnu::unused]] TSize Size;
   [[gnu::unused]] TAddress Address;
+  [[gnu::unused]] TAddress Address_Max = TAddress_Max;
 
   [[gnu::unused]] TAddressSegment AddressSegment =
     { .Addr = 0, .Size = 0 };

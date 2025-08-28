@@ -74,20 +74,23 @@ const TSint_4
 typedef TUint_1 TUnit;
 
 /*
-  Storage for number of units
-
-  ATmega328 has 2 KiB memory, so TUint_2 is enough.
-*/
-typedef TUint_2 TSize;
-
-/*
   Address of unit
 
   It's like coordinates of container on ship.
 
-  Again, TUint_2 is enough for 2 KiB memory.
+  ATmega328 uses two bytes for address.
 */
 typedef TUint_2 TAddress;
+
+// Max value address can store
+const TAddress TAddress_Max = TUint_2_Max;
+
+/*
+  Storage for number of units
+
+  It must have same capacity as TAddress.
+*/
+typedef TUint_2 TSize;
 
 /*
   Address span
