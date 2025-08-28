@@ -3,13 +3,12 @@
 /*
   Version: 13
   Author: Martin Eden
-  Last mod.: 2025-08-25
+  Last mod.: 2025-08-28
 */
 
 #pragma once
 
-// Renaming fancy C types to our not less fancy names:
-// (
+// ( Renaming fancy C types to our not less fancy names:
 
 /*
   Logical flag
@@ -18,18 +17,18 @@
 */
 typedef bool TBool;
 
-// [0, 2^8)
+// Integer [0, 2^8)
 typedef unsigned char TUint_1;
-// [0, 2^16) aka 64 Ki
+// Integer [0, 2^16)
 typedef unsigned int TUint_2;
-// [0, 2^32) aka 4 Gi
+// Integer [0, 2^32)
 typedef unsigned long int TUint_4;
 
-// Centered [-2^7, 2^7)
+// Integer [-2^7, 2^7)
 typedef signed char TSint_1;
-// Centered [-2^15, 2^15)
+// Integer [-2^15, 2^15)
 typedef signed int TSint_2;
-// Centered [-2^31, 2^31)
+// Integer [-2^31, 2^31)
 typedef signed long int TSint_4;
 
 // Not sure we need float but let it stay for now
@@ -38,14 +37,12 @@ typedef float TFloat;
 /*
   Pointer to byte
 
-  That pointer to byte assumes list of bytes that ends on zero.
-  Called ASCIIZ.
+  This is what you'll get as argument when calling print("Hello!\n").
 
-  We don't like this structure. Using mostly to receive hardcoded
-  arguments.
+  C library functions assume this is memory address and iterate it
+  until byte in memory is zero.
 
-  There is " key on keyboard, so C thinks it can handle "strings".
-  Great language!
+  This type is used mostly in input interface functions.
 */
 typedef const char * TAsciiz;
 
@@ -68,16 +65,9 @@ const TSint_4
 // )
 
 /*
-  Unit of stuff that our system handles.
+  Unit of stuff that system handles
 
-  It's it's something that has known size.
-
-  Code should never pretend it knows value of unit.
-
-  It's like container on ship. We know weight but not contents.
-
-  Only processor has instructions to examine and modify
-  unit's contents.
+  It's like standard container on cargo ship.
 
   For AVR architecture it's byte. (What a spoiler!)
 */
@@ -93,7 +83,7 @@ typedef TUint_1 TUnit;
 typedef TUint_2 TAddress;
 
 /*
-  Address span with byte granularity
+  Address span
 */
 struct TAddressSegment
 {
