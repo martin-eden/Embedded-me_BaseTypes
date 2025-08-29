@@ -33,12 +33,15 @@ void CompilationTest()
   [[gnu::unused]] TSint_4 Sint_4_Min = TSint_4_Min;
 
   [[gnu::unused]] TUnit Unit;
-  [[gnu::unused]] TSize Size;
+
   [[gnu::unused]] TAddress Address;
   [[gnu::unused]] TAddress Address_Max = TAddress_Max;
 
-  [[gnu::unused]] TAddressSegment AddressSegment =
-    { .Addr = 0, .Size = 0 };
+  [[gnu::unused]] TSize Size;
+  [[gnu::unused]] TSize Size_Max = TSize_Max;
+
+  [[gnu::unused]] TAddressSegment AddressSegment;
+  [[gnu::unused]] TAddressSegment AddressSegment_Max = TAddressSegment_Max;
 }
 
 void setup()

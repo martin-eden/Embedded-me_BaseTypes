@@ -1,9 +1,9 @@
 // My nomenclature of type names
 
 /*
-  Version: 14
+  Version: 15
   Author: Martin Eden
-  Last mod.: 2025-08-28
+  Last mod.: 2025-08-29
 */
 
 #pragma once
@@ -92,6 +92,9 @@ const TAddress TAddress_Max = TUint_2_Max;
 */
 typedef TUint_2 TSize;
 
+// Max "size" value
+const TSize TSize_Max = TUint_2_Max;
+
 /*
   Address span
 */
@@ -101,10 +104,15 @@ struct TAddressSegment
   TSize Size = 0;
 };
 
+// Maximum span
+const TAddressSegment TAddressSegment_Max =
+  { .Addr = 0, .Size = TSize_Max };
+
 /*
   2024 # # # # # # # # #
   2025-01-28
   2025-08-25
   2025-08-27
   2025-08-28
+  2025-08-29
 */
