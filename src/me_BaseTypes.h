@@ -1,9 +1,9 @@
 // My nomenclature of type names
 
 /*
-  Version: 15
+  Version: 16
   Author: Martin Eden
-  Last mod.: 2025-08-29
+  Last mod.: 2025-11-18
 */
 
 #pragma once
@@ -104,6 +104,27 @@ struct TAddressSegment
   TSize Size = 0;
 };
 
+/*
+  Macro to create address span from name:
+
+    TAddressSegment DataSeg = AsAddrSeg_M(Data);
+
+  is equivalent to
+
+    TAddressSegment DataSeg = { (TAddress) &Data, sizeof(Data) };
+*/
+#define AsAddrSeg_M(Name) \
+  __extension__ \
+  ( \
+    { \
+      TAddressSegment \
+      { \
+        .Addr = (TAddress) &Name, \
+        .Size = sizeof(Name), \
+      }; \
+    } \
+  )
+
 // Maximum span
 const TAddressSegment TAddressSegment_Max =
   { .Addr = 0, .Size = TSize_Max };
@@ -115,4 +136,5 @@ const TAddressSegment TAddressSegment_Max =
   2025-08-27
   2025-08-28
   2025-08-29
+  2025-11-18
 */
