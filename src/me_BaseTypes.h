@@ -1,9 +1,9 @@
 // My nomenclature of type names
 
 /*
-  Version: 16
+  Version: 17
   Author: Martin Eden
-  Last mod.: 2025-11-18
+  Last mod.: 2026-01-10
 */
 
 #pragma once
@@ -107,13 +107,13 @@ struct TAddressSegment
 /*
   Macro to create address span from name:
 
-    TAddressSegment DataSeg = AsAddrSeg_M(Data);
+    TAddressSegment DataSeg = M_AsAddrSeg(Data);
 
   is equivalent to
 
     TAddressSegment DataSeg = { (TAddress) &Data, sizeof(Data) };
 */
-#define AsAddrSeg_M(Name) \
+#define M_AsAddrSeg(Name) \
   __extension__ \
   ( \
     { \
@@ -131,10 +131,6 @@ const TAddressSegment TAddressSegment_Max =
 
 /*
   2024 # # # # # # # # #
-  2025-01-28
-  2025-08-25
-  2025-08-27
-  2025-08-28
-  2025-08-29
-  2025-11-18
+  2025 # # # # # #
+  2026-01-10
 */
